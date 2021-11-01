@@ -2,8 +2,8 @@
 A repository for RL paper reading. This will not be a comprehensive list of all relevant papers. Topics are rough now and feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
 - *[Offline RL](#1-offline-rl)*
-- *[RL & Information Theory](#2-rl-information-theory)*
-- *[RL & Game Theory](#3-rl-game-theory)*
+- *[RL & Information Theory](#2-rl--information-theory)*
+- *[RL & Game Theory](#3-rl--game-theory)*
 - *[Miscellaneous: Blogs, People, Courses, etc.](#4-miscellaneous)*
 
 Comments/notes may be added directly below each paper, or as a separate file in the [notes]() folder. We can use emoji to mark certain papers if needed, like using 🔘 for the read and discussed ones, 🔛 for papers in reading/discussion, 🔝 for important ones, 💤 for dull ones, 👽 for interesting ones which you plan to read later, etc.
@@ -51,7 +51,6 @@ Ilya Kostrikov, Ashvin Nair, Sergey Levine\
 *Preprint, 2021*
 <br> -->
 
-<br>
 
 ## 2. RL & Information Theory
 > The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. This may also connects to the state representation learning of RL.
@@ -78,7 +77,6 @@ Dilip Arumugam, Benjamin Van Roy\
 
 
 
-<br>
 
 ## 3. RL & Game Theory
 👽**An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective** [[link](https://arxiv.org/abs/2011.00583)] \
@@ -96,7 +94,6 @@ Aravind Rajeswaran, Igor Mordatch, Vikash Kumar\
 *Preprint, 2021*
 <br> -->
 
-<br>
 
 ## 4. Miscellaneous
 ### Courses
