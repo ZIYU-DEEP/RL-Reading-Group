@@ -85,7 +85,7 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 *Preprint, 2021*
 > This paper is like a follow-up work on IPPO. Differently, the critic part of MAPPO uses the (agent-specific) *global state* as the input, unlike the observations used in IPPO.
 >
-> Several algorithmic tricks are also discussed in this paper, like the value normalization, action masking, etc.
+> Several algorithmic tricks are discussed in this paper, like value normalization, action masking, etc.
 
 <!-- **** [[link]()] \
 \
@@ -119,7 +119,10 @@ Dilip Arumugam, Benjamin Van Roy\
 **Provably Efficient RL with Rich Observations via Latent State Decoding** [[link](https://arxiv.org/abs/1901.09018)] \
 Simon S. Du, Akshay Krishnamurthy, Nan Jiang, Alekh Agarwal, Miroslav Dudík, John Langford\
 *ICML, 2019*
-<!-- <br> -->
+
+**Is a Good Representation Sufficient for Sample Efficient Reinforcement Learning?** [[link](https://arxiv.org/abs/1910.03016)] \
+Simon S. Du, Sham M. Kakade, Ruosong Wang, Lin F. Yang\
+*ICLR, 2020*
 
 **Dream to Control: Learning Behaviors by Latent Imagination** [[link](https://openreview.net/forum?id=S1lOTC4tDS)] [[blog](https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html)] [[website](https://danijar.com/project/dreamer/)] [[video](https://youtu.be/BDxRNnhPTlU)] \
 Danijar Hafner, Timothy Lillicrap, Jimmy Ba, Mohammad Norouzi\
@@ -175,6 +178,11 @@ Fei Feng, Ruosong Wang, Wotao Yin, Simon S. Du, Lin F. Yang\
 Donghwan Lee, Niao He\
 *NeurIPS, 2020*
 
+👽 **Making Sense of Reinforcement Learning and Probabilistic Inference** [[link](https://openreview.net/forum?id=S1xitgHtvS)] \
+Brendan O'Donoghue, Ian Osband, Catalin Ionescu\
+*ICLR, 2020*
+> This paper generalizes the *RL optimization problem* to be a *Bayesian inference problem*, and proposes a coherent framework to minimize Bayes regret. This approach better integrates the exploration concerns in RL which is often ignored in traditional works.
+
 **Hypermodels for Exploration** [[link](https://openreview.net/forum?id=ryx6WgStPB)] \
 Vikranth Dwaracherla, Xiuyuan Lu, Morteza Ibrahimi, Ian Osband, Zheng Wen, Benjamin Van Roy\
 *ICLR, 2020*
@@ -183,16 +191,19 @@ Vikranth Dwaracherla, Xiuyuan Lu, Morteza Ibrahimi, Ian Osband, Zheng Wen, Benja
 **Learning to Plan in High Dimensions via Neural Exploration-Exploitation Trees** [[link](https://arxiv.org/abs/1903.00070)] [[talk](https://papertalk.org/papertalks/3941)] \
 Binghong Chen, Bo Dai, Qinjie Lin, Guo Ye, Han Liu, Le Song\
 *ICLR (spotlight), 2020*
-> This may potentially be relevant to the UFODT paper.
+> This may potentially be relevant to the UFODT paper, as well as the NeurIPS 2021 paper: [The Value of Information When Deciding What to Learn](https://arxiv.org/abs/2110.13973).
+
+**Lottery Tickets in RL and NLP** [[link](https://openreview.net/forum?id=S1xnXRVFwH)] \
+Haonan Yu, Sergey Edunov, Yuandong Tian, Ari S. Morcos\
+*ICLR, 2020*
+<br>
 
 **Learning the Arrow of Time for Problems in Reinforcement Learning** [[link](https://openreview.net/forum?id=rylJkpEtwS)] [[talk](https://iclr.cc/virtual_2020/poster_rylJkpEtwS.html)] \
 Nasim Rahaman, Steffen Wolf, Anirudh Goyal, Roman Remme, Yoshua Bengio\
 *ICLR, 2021*
 > The notion of the arrow of time looks to be captivating, which is a function *tends* to increase as the MDP steps forward, just like the entropy increase principle. The agent will be rewarded for trajectories which decrease such an arrow, i.e., push the orderless to the ordered, like Sisyphus.
 
-<!-- **** [[link]()] \
-\
-*Preprint, 2021* -->
+
 
 
 
