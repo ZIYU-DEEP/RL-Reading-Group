@@ -9,12 +9,12 @@ This is a repository for RL paper reading. It will *not* be a comprehensive list
 - [RL & Representation Learning](#4-rl--representation-learning)
 - [Miscellaneous: Blogs, People, Courses, etc.](#5-miscellaneous)
 
-Comments/notes may be added directly below each paper, or as a separate file in the [notes](https://github.com/ZIYU-DEEP/RL-Reading-Group/tree/main/notes) folder. We can use emoji to mark certain papers if needed, like using 🔘 for the read and discussed ones, 🔛 for papers in reading/discussion, 🔝 for important ones, 💤 for dull ones, 👽 for interesting ones which you plan to read later, etc.
+Comments may be added directly below each paper, or as a separate file in the [notes](https://github.com/ZIYU-DEEP/RL-Reading-Group/tree/main/notes) folder. We can use emoji to mark certain papers if needed, like 🔘 for the discussed ones, 🔛 for papers in reading/discussion, 🔝 for important ones, 👽 for interesting ones which you plan to read shortly, 💤 for dull ones, etc.
 
 <!-- ## 1. General RL Theory -->
 
 ## 1. Offline RL
-**[Awesome Offline RL Collection](https://github.com/hanjuku-kaso/awesome-offline-rl)**\
+**[Awesome Offline RL](https://github.com/hanjuku-kaso/awesome-offline-rl)**\
 Haruka Kiyohara, Yuta Saito, Guoyu Yang
 <!-- <br> -->
 
@@ -92,15 +92,21 @@ Dilip Arumugam, Benjamin Van Roy\
 
 
 ## 4. RL & Representation Learning
-**Provably efficient RL with Rich Observations via Latent State Decoding** [[link](https://arxiv.org/abs/1901.09018)] \
+**Provably Efficient RL with Rich Observations via Latent State Decoding** [[link](https://arxiv.org/abs/1901.09018)] \
 Simon S. Du, Akshay Krishnamurthy, Nan Jiang, Alekh Agarwal, Miroslav Dudík, John Langford\
 *ICML, 2019*
 <!-- <br> -->
+
+**Decoupling Representation Learning from Reinforcement Learning** [[link](http://proceedings.mlr.press/v139/stooke21a.html)] \
+Adam Stooke, Kimin Lee, Pieter Abbeel, Michael Laskin \
+*ICML, 2021*
 
 **Representation Learning for Online and Offline RL in Low-rank MDPs** [[link](https://arxiv.org/abs/2110.04652)] \
 Masatoshi Uehara, Xuezhou Zhang, Wen Sun\
 *Preprint, 2021*
 <!-- <br> -->
+
+
 
 
 
@@ -131,9 +137,6 @@ Donghwan Lee, Niao He\
 *NeurIPS, 2020*
 
 
-**Decoupling Representation Learning from Reinforcement Learning** [[link](http://proceedings.mlr.press/v139/stooke21a.html)] \
-Adam Stooke, Kimin Lee, Pieter Abbeel, Michael Laskin \
-*ICML, 2021*
 <!-- <br> -->
 
 
