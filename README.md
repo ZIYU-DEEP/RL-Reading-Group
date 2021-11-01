@@ -65,6 +65,10 @@ Yaodong Yang, Jun Wang\
 Sven Gronauer, Klaus Diepold\
 *Artificial Intelligence Review, 2021*
 
+**Value-Decomposition Networks For Cooperative Multi-Agent Learning** [[link](https://arxiv.org/abs/1706.05296)] \
+Peter Sunehag, Guy Lever, Audrunas Gruslys, Wojciech Marian Czarnecki, Vinicius Zambaldi, Max Jaderberg, Marc Lanctot, Nicolas Sonnerat, Joel Z. Leibo, Karl Tuyls, Thore Graepel\
+*AAMAS, 2017*
+
 👽 **A Game Theoretic Framework for Model Based Reinforcement Learning** [[link](https://arxiv.org/abs/2004.07804)] \
 Aravind Rajeswaran, Igor Mordatch, Vikash Kumar\
 *ICML, 2020*
@@ -182,6 +186,12 @@ Donghwan Lee, Niao He\
 Brendan O'Donoghue, Ian Osband, Catalin Ionescu\
 *ICLR, 2020*
 > This paper generalizes the *RL optimization problem* to be a *Bayesian inference problem*, and proposes a coherent framework to minimize Bayes regret. This approach better integrates the exploration concerns in RL which is often ignored in traditional works.
+>
+> This paper also connects to Surgey Levine's well cited survey: [Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review](https://arxiv.org/abs/1805.00909), while this one further emphasize the role of epistemic uncertainty in policy design.
+
+**Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review** [[link](https://arxiv.org/abs/1805.00909)] [[slides](https://jackhaha363.github.io/talk/control_as_inf/slides.pdf)] [[rap](https://www.youtube.com/watch?v=IAJ1LywY6Zg)] \
+Sergey Levine\
+*Preprint, 2021*
 
 **Hypermodels for Exploration** [[link](https://openreview.net/forum?id=ryx6WgStPB)] \
 Vikranth Dwaracherla, Xiuyuan Lu, Morteza Ibrahimi, Ian Osband, Zheng Wen, Benjamin Van Roy\
