@@ -52,6 +52,7 @@ Ilya Kostrikov, Ashvin Nair, Sergey Levine\
 <br> -->
 
 <br>
+
 ## 2. RL & Information Theory
 > The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. This may also connects to the state representation learning of RL.
 
@@ -78,6 +79,7 @@ Dilip Arumugam, Benjamin Van Roy\
 
 
 <br>
+
 ## 3. RL & Game Theory
 👽**An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective** [[link](https://arxiv.org/abs/2011.00583)] \
 Yaodong Yang, Jun Wang\
@@ -95,6 +97,7 @@ Aravind Rajeswaran, Igor Mordatch, Vikash Kumar\
 <br> -->
 
 <br>
+
 ## 4. Miscellaneous
 ### Courses
 - **[CMPUT 653 Theoretical Foundations of Reinforcement Learning](https://rltheory.github.io/)** by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/) at the University of Alberta.
