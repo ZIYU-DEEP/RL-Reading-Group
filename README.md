@@ -1,12 +1,15 @@
 # RL Reading Group
-A repository for RL paper reading. This will *not* be a comprehensive list of all relevant papers. Topics are rough now and feel free to modify or increase anytime:
-<!-- - *[General RL Theory](#1-rl-theory)* -->
-- *[Offline RL](#1-offline-rl)*
-- *[RL & Information Theory](#2-rl--information-theory)*
-- *[RL & Game Theory](#3-rl--game-theory)*
-- *[Miscellaneous: Blogs, People, Courses, etc.](#4-miscellaneous)*
+*Last updated on November, 2021.*
 
-Comments/notes may be added directly below each paper, or as a separate file in the [notes]() folder. We can use emoji to mark certain papers if needed, like using 🔘 for the read and discussed ones, 🔛 for papers in reading/discussion, 🔝 for important ones, 💤 for dull ones, 👽 for interesting ones which you plan to read later, etc.
+This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now and feel free to modify or increase anytime:
+<!-- - *[General RL Theory](#1-rl-theory)* -->
+- [Offline RL](#1-offline-rl)
+- [RL & Game Theory](#2-rl--game-theory)
+- [RL & Information Theory](#3-rl--information-theory)
+- [RL & Representation Learning](#4-rl--representation-learning)
+- [Miscellaneous: Blogs, People, Courses, etc.](#5-miscellaneous)
+
+Comments/notes may be added directly below each paper, or as a separate file in the [notes](https://github.com/ZIYU-DEEP/RL-Reading-Group/tree/main/notes) folder. We can use emoji to mark certain papers if needed, like using 🔘 for the read and discussed ones, 🔛 for papers in reading/discussion, 🔝 for important ones, 💤 for dull ones, 👽 for interesting ones which you plan to read later, etc.
 
 <!-- ## 1. General RL Theory -->
 
@@ -20,7 +23,7 @@ Sergey Levine, Aviral Kumar, George Tucker, Justin Fu\
 *Preprint, 2020*
 <!-- <br> -->
 
-👽**MOPO: Model-based Offline Policy Optimization** [[link](https://arxiv.org/abs/2005.13239)] [[code](https://github.com/tianheyu927/mopo)] \
+👽 **MOPO: Model-based Offline Policy Optimization** [[link](https://arxiv.org/abs/2005.13239)] [[code](https://github.com/tianheyu927/mopo)] \
 Tianhe Yu, Garrett Thomas, Lantao Yu, Stefano Ermon, James Zou, Sergey Levine, Chelsea Finn, Tengyu Ma\
 *NeurIPS, 2020*
 <!-- <br> -->
@@ -51,8 +54,24 @@ Ilya Kostrikov, Ashvin Nair, Sergey Levine\
 *Preprint, 2021*
 <br> -->
 
+## 2. RL & Game Theory
+👽 **An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective** [[link](https://arxiv.org/abs/2011.00583)] \
+Yaodong Yang, Jun Wang\
+*Preprint, 2021*
+<!-- <br> -->
 
-## 2. RL & Information Theory
+👽 **A Game Theoretic Framework for Model Based Reinforcement Learning** [[link](https://arxiv.org/abs/2004.07804)] \
+Aravind Rajeswaran, Igor Mordatch, Vikash Kumar\
+*ICML, 2020*
+<!-- <br> -->
+
+<!-- **** [[link]()] \
+\
+*Preprint, 2021*
+<br> -->
+
+
+## 3. RL & Information Theory
 > The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. This may also connects to the state representation learning of RL.
 
 **World Models** [[link](https://arxiv.org/abs/1803.10122)] [[code](https://github.com/hardmaru/WorldModelsExperiments)] \
@@ -70,41 +89,36 @@ Dilip Arumugam, Benjamin Van Roy\
 *ICML, 2021*
 <!-- <br> -->
 
-<!-- **** [[link]()] \
-\
-*Preprint, 2021*
-<br> -->
 
 
+## 4. RL & Representation Learning
+**Provably efficient RL with Rich Observations via Latent State Decoding** [[link](https://arxiv.org/abs/1901.09018)] \
+Simon S. Du, Akshay Krishnamurthy, Nan Jiang, Alekh Agarwal, Miroslav Dudík, John Langford\
+*ICML, 2019*
+<!-- <br> -->
 
-
-## 3. RL & Game Theory
-👽**An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective** [[link](https://arxiv.org/abs/2011.00583)] \
-Yaodong Yang, Jun Wang\
+**Representation Learning for Online and Offline RL in Low-rank MDPs** [[link](https://arxiv.org/abs/2110.04652)] \
+Masatoshi Uehara, Xuezhou Zhang, Wen Sun\
 *Preprint, 2021*
 <!-- <br> -->
 
-👽**A Game Theoretic Framework for Model Based Reinforcement Learning** [[link](https://arxiv.org/abs/2004.07804)] \
-Aravind Rajeswaran, Igor Mordatch, Vikash Kumar\
-*ICML, 2020*
-<!-- <br> -->
-
-<!-- **** [[link]()] \
-\
-*Preprint, 2021*
-<br> -->
 
 
-## 4. Miscellaneous
+
+
+
+
+## 5. Miscellaneous
 ### Courses
-- **[CMPUT 653 Theoretical Foundations of Reinforcement Learning](https://rltheory.github.io/)** by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/) at the University of Alberta.
-- **[CS 598 Statistical Reinforcement Learning](https://nanjiang.cs.illinois.edu/cs598/)** by [Nan Jiang](https://nanjiang.cs.illinois.edu/) at UIUC.
-- **[CS 6789: Foundations of Reinforcement Learning](https://wensun.github.io/CS6789_fall_2021.html)** by Wen Sun at Cornell University and Sham Kakade at University of Washington, with a book named [Reinforcement Learning: Theory and Algorithms](https://rltheorybook.github.io/).
+- [CMPUT 653 Theoretical Foundations of Reinforcement Learning](https://rltheory.github.io/) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/) at the University of Alberta.
+- [CS 598 Statistical Reinforcement Learning](https://nanjiang.cs.illinois.edu/cs598/) by [Nan Jiang](https://nanjiang.cs.illinois.edu/) at UIUC.
+- [CS 6789: Foundations of Reinforcement Learning](https://wensun.github.io/CS6789_fall_2021.html) by [Wen Sun](https://wensun.github.io/) at Cornell University and [Sham Kakade](https://homes.cs.washington.edu/~sham/) at University of Washington, with a book named [Reinforcement Learning: Theory and Algorithms](https://rltheorybook.github.io/).
 ### Seminars and Workshops
-- **[RL Theory Seminars](https://sites.google.com/view/rltheoryseminars/home)**, and its [YouTube page](https://www.youtube.com/c/RLtheory).
-- **[Offline Reinforcement Learning Tutorial](https://sites.google.com/view/offlinerltutorial-neurips2020/home)** at NeurIPS 2020.
-- **[Offline Reinforcement Learning Workshop](https://offline-rl-neurips.github.io/papers.html)** at NeurIPS 2020, with a bunch of videos on workshop papers.
-- **[Smooth Games Optimization and ML Workshop](https://sgo-workshop.github.io/)** at NeurIPS 2019.
+- [RL Theory Seminars](https://sites.google.com/view/rltheoryseminars/home), and its [YouTube page](https://www.youtube.com/c/RLtheory).
+- [Statistical Foundations of Reinforcement Learning](https://rltheorybook.github.io/colt21tutorial) at COLT 2021.
+- [Offline Reinforcement Learning Tutorial](https://sites.google.com/view/offlinerltutorial-neurips2020/home) at NeurIPS 2020.
+- [Offline Reinforcement Learning Workshop](https://offline-rl-neurips.github.io/papers.html) at NeurIPS 2020, with a bunch of videos on workshop papers.
+- [Smooth Games Optimization and ML Workshop](https://sgo-workshop.github.io/) at NeurIPS 2019.
 
 ### Unclassified Papers
 **Provably Efficient Exploration for RL with Unsupervised Learning** [[link](https://arxiv.org/abs/2003.06898)] [[slides](https://drive.google.com/file/d/1lVLTongo_cK9qfsWwb63lIn06SrYiOY8/view)] [[talk](https://youtu.be/kaQSX7oSyWg)] \
