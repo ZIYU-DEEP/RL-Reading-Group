@@ -1,5 +1,5 @@
 # RL Reading Group
-A repository for RL paper reading. This will not be a comprehensive list of all relevant papers. Topics are rough now and feel free to modify or increase anytime:
+A repository for RL paper reading. This will *not* be a comprehensive list of all relevant papers. Topics are rough now and feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
 - *[Offline RL](#1-offline-rl)*
 - *[RL & Information Theory](#2-rl--information-theory)*
