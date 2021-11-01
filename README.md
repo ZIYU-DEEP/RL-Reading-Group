@@ -1,7 +1,7 @@
 # RL Reading Group
 *Last updated on November, 2021.*
 
-This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now and feel free to modify or increase anytime:
+This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now; feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
 - [Offline RL](#1-offline-rl)
 - [RL & Game Theory (and MARL)](#2-rl--game-theory-and-marl)
@@ -87,7 +87,7 @@ Christian Schroeder de Witt, Tarun Gupta, Denys Makoviichuk, Viktor Makoviychuk,
 **MAPPO: The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games** [[link](https://arxiv.org/abs/2103.01955)] [[blog](https://bair.berkeley.edu/blog/2021/07/14/mappo/)] [[code](https://github.com/marlbenchmark/on-policy)] \
 Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 *Preprint, 2021*
-> This paper is like a follow-up work on IPPO. Differently, the critic part of MAPPO uses the (agent-specific) *global state* as the input, unlike the observations used in IPPO.
+> This paper is like a follow-up work on IPPO. The critic part of MAPPO uses the (agent-specific) *global state* as the input, unlike the observations used in IPPO.
 >
 > Several algorithmic tricks are discussed in this paper, like value normalization, action masking, etc.
 
@@ -97,7 +97,7 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 
 
 ## 3. RL & Information Theory
-> The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. This may also connects to the state representation learning of RL.
+> The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. It may also connects to the state representation learning of RL.
 
 **World Models** [[link](https://arxiv.org/abs/1803.10122)] [[code](https://github.com/hardmaru/WorldModelsExperiments)] \
 David Ha, Jürgen Schmidhuber\
@@ -187,7 +187,7 @@ Brendan O'Donoghue, Ian Osband, Catalin Ionescu\
 *ICLR, 2020*
 > This paper generalizes the *RL optimization problem* to be a *Bayesian inference problem*, and proposes a coherent framework to minimize Bayes regret. This approach better integrates the exploration concerns in RL which is often ignored in traditional works.
 >
-> This paper also connects to Surgey Levine's well cited survey: [Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review](https://arxiv.org/abs/1805.00909), while this one further emphasize the role of epistemic uncertainty in policy design.
+> This paper also connects to Surgey Levine's well cited survey: [Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review](https://arxiv.org/abs/1805.00909), while this one further emphasizes the role of epistemic uncertainty in policy design.
 
 **Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review** [[link](https://arxiv.org/abs/1805.00909)] [[slides](https://jackhaha363.github.io/talk/control_as_inf/slides.pdf)] [[rap](https://www.youtube.com/watch?v=IAJ1LywY6Zg)] \
 Sergey Levine\
