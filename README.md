@@ -1,5 +1,5 @@
 # RL Reading Group
-*Last updated on November, 2021.*
+*Last updated on November 3, 2021.*
 
 This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now; feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
@@ -189,7 +189,7 @@ Brendan O'Donoghue, Ian Osband, Catalin Ionescu\
 >
 > This paper also connects to Surgey Levine's well cited survey: [Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review](https://arxiv.org/abs/1805.00909), while this one further emphasizes the role of epistemic uncertainty in policy design.
 
-**Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review** [[link](https://arxiv.org/abs/1805.00909)] [[slides](https://jackhaha363.github.io/talk/control_as_inf/slides.pdf)] [[rap](https://www.youtube.com/watch?v=IAJ1LywY6Zg)] \
+**Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review** [[link](https://arxiv.org/abs/1805.00909)] [[slides](https://jackhaha363.github.io/talk/control_as_inf/slides.pdf)] [[rap](https://www.youtube.com/watch?v=IAJ1LywY6Zg)] [[lecture](https://www.youtube.com/watch?v=oqvTC1rTjg8&list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37&index=12)] [[lecture notes](http://rail.eecs.berkeley.edu/deeprlcourse-fa18/static/slides/lec-15.pdf)] \
 Sergey Levine\
 *Preprint, 2021*
 
