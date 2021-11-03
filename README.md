@@ -191,7 +191,7 @@ Brendan O'Donoghue, Ian Osband, Catalin Ionescu\
 
 **Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review** [[link](https://arxiv.org/abs/1805.00909)] [[slides](https://jackhaha363.github.io/talk/control_as_inf/slides.pdf)] [[rap](https://www.youtube.com/watch?v=IAJ1LywY6Zg)] [[lecture](https://www.youtube.com/watch?v=oqvTC1rTjg8&list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37&index=12)] [[lecture notes](http://rail.eecs.berkeley.edu/deeprlcourse-fa18/static/slides/lec-15.pdf)] \
 Sergey Levine\
-*Preprint, 2021*
+*Preprint, 2018*
 
 **Hypermodels for Exploration** [[link](https://openreview.net/forum?id=ryx6WgStPB)] \
 Vikranth Dwaracherla, Xiuyuan Lu, Morteza Ibrahimi, Ian Osband, Zheng Wen, Benjamin Van Roy\
