@@ -7,7 +7,7 @@ This is a repository for RL paper reading. It will *not* be a comprehensive list
 - [RL & Game Theory (and MARL)](#-rl--game-theory-and-marl)
 - [RL & Information Theory](#-rl--information-theory)
 - [RL & Representation Learning](#-rl--representation-learning)
-- [Dueling/Preference RL](#-duelingpreference-rl)
+- [Dueling/Preference RL](#-duelingpreference-rl-pbrl)
 - [Unclassified Papers](#-unclassified-papers)
 - [Miscellaneous: Blogs, People, Courses, etc.](#-miscellaneous)
 
