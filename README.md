@@ -3,13 +3,13 @@
 
 This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now; feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
-- [Offline RL](#🕹-offline-rl)
-- [RL & Game Theory (and MARL)](#🕹-rl--game-theory-and-marl)
-- [RL & Information Theory](#🕹-rl--information-theory)
-- [RL & Representation Learning](#🕹-rl--representation-learning)
-- [Dueling/Preference RL](#🕹-dueling--preference-rl)
-- [Unclassified Papers](#🕹-unclassified-papers)
-- [Miscellaneous: Blogs, People, Courses, etc.](#🕹-miscellaneous)
+- [Offline RL](#-offline-rl)
+- [RL & Game Theory (and MARL)](#-rl--game-theory-and-marl)
+- [RL & Information Theory](#-rl--information-theory)
+- [RL & Representation Learning](#-rl--representation-learning)
+- [Dueling/Preference RL](#-duelingpreference-rl)
+- [Unclassified Papers](#-unclassified-papers)
+- [Miscellaneous: Blogs, People, Courses, etc.](#-miscellaneous)
 
 Comments may be added directly below each paper, or as a separate file in the [notes](https://github.com/ZIYU-DEEP/RL-Reading-Group/tree/main/notes) folder. We can use emoji to mark certain papers if needed, like 🔘 for the discussed ones, 🔛 for papers in reading/discussion, 🔝 for important ones, 👽 for interesting ones which you plan to read shortly, 💤 for dull ones, etc.
 
@@ -98,13 +98,10 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 *Preprint, 2021* -->
 
 
-<<<<<<< Updated upstream
-## 3. RL & Information Theory
-> The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. It may also connects to the state representation learning of RL.
-=======
+
 ## 🕹 RL & Information Theory
-> The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. This may also connects to the state representation learning of RL.
->>>>>>> Stashed changes
+> The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. It may also connects to the state representation learning of RL.
+<!-- >>>>>>> Stashed changes -->
 
 **World Models** [[link](https://arxiv.org/abs/1803.10122)] [[code](https://github.com/hardmaru/WorldModelsExperiments)] \
 David Ha, Jürgen Schmidhuber\
