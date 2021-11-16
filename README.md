@@ -3,17 +3,19 @@
 
 This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now; feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
-- [Offline RL](#1-offline-rl)
-- [RL & Game Theory (and MARL)](#2-rl--game-theory-and-marl)
-- [RL & Information Theory](#3-rl--information-theory)
-- [RL & Representation Learning](#4-rl--representation-learning)
-- [Miscellaneous: Blogs, People, Courses, etc.](#5-miscellaneous)
+- [Offline RL](#🕹-offline-rl)
+- [RL & Game Theory (and MARL)](#🕹-rl--game-theory-and-marl)
+- [RL & Information Theory](#🕹-rl--information-theory)
+- [RL & Representation Learning](#🕹-rl--representation-learning)
+- [Dueling/Preference RL](#🕹-dueling--preference-rl)
+- [Unclassified Papers](#🕹-unclassified-papers)
+- [Miscellaneous: Blogs, People, Courses, etc.](#🕹-miscellaneous)
 
 Comments may be added directly below each paper, or as a separate file in the [notes](https://github.com/ZIYU-DEEP/RL-Reading-Group/tree/main/notes) folder. We can use emoji to mark certain papers if needed, like 🔘 for the discussed ones, 🔛 for papers in reading/discussion, 🔝 for important ones, 👽 for interesting ones which you plan to read shortly, 💤 for dull ones, etc.
 
 <!-- ## 1. General RL Theory -->
 
-## 1. Offline RL
+## 🕹 Offline RL
 **[Awesome Offline RL](https://github.com/hanjuku-kaso/awesome-offline-rl)**\
 Haruka Kiyohara, Yuta Saito, Guoyu Yang
 <!-- <br> -->
@@ -54,7 +56,7 @@ Ilya Kostrikov, Ashvin Nair, Sergey Levine\
 *Preprint, 2021*
 <br> -->
 
-## 2. RL & Game Theory (and MARL)
+## 🕹 RL & Game Theory (and MARL)
 > Roughly speaking, major works consider to understand your opponents/collaborators, by explicitly estimating other agents' behaviors, or promoting communication (information sharing) between agents. However, there are also papers claiming that learning in a single-agent way may already be sufficient for you to exceed in the multi-agent environment.
 
 👽 **An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective** [[link](https://arxiv.org/abs/2011.00583)] \
@@ -96,8 +98,13 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 *Preprint, 2021* -->
 
 
+<<<<<<< Updated upstream
 ## 3. RL & Information Theory
 > The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. It may also connects to the state representation learning of RL.
+=======
+## 🕹 RL & Information Theory
+> The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. This may also connects to the state representation learning of RL.
+>>>>>>> Stashed changes
 
 **World Models** [[link](https://arxiv.org/abs/1803.10122)] [[code](https://github.com/hardmaru/WorldModelsExperiments)] \
 David Ha, Jürgen Schmidhuber\
@@ -119,7 +126,7 @@ Dilip Arumugam, Benjamin Van Roy\
 *Preprint, 2021* -->
 
 
-## 4. RL & Representation Learning
+## 🕹 RL & Representation Learning
 **Provably Efficient RL with Rich Observations via Latent State Decoding** [[link](https://arxiv.org/abs/1901.09018)] \
 Simon S. Du, Akshay Krishnamurthy, Nan Jiang, Alekh Agarwal, Miroslav Dudík, John Langford\
 *ICML, 2019*
@@ -149,26 +156,27 @@ Masatoshi Uehara, Xuezhou Zhang, Wen Sun\
 \
 *Preprint, 2021* -->
 
+## 🕹 Dueling/Preference RL (PbRL)
+**Deep Reinforcement Learning from Human Preferences** [[link](https://arxiv.org/pdf/1706.03741.pdf)] \
+Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amodei\
+*NIPS, 2017*
+
+👽 **Dueling Posterior Sampling for Preference-based Reinforcement Learning** [[link](http://proceedings.mlr.press/v124/novoseller20a/novoseller20a.pdf)] [[code](https://github.com/ernovoseller/DuelingPosteriorSampling)] \
+Ellen R. Novoseller, Yibing Wei, Yanan Sui, Yisong Yue, Joel W. Burdick\
+*UAI, 2020*
+
+**Preference-based Reinforcement Learning with Finite-Time Guarantees** [[link](https://arxiv.org/abs/2006.08910)] \
+Yichong Xu, Ruosong Wang, Lin F. Yang, Aarti Singh, Artur Dubrawski\
+*NeurIPS (spotlight), 2020*
+
+**Dueling RL: Reinforcement Learning with Trajectory Preferences** [[link](https://arxiv.org/pdf/2111.04850.pdf)] \
+Aldo Pacchiano, Aadirupa Saha, and Jonathan Lee\
+*Preprint, 2021*
 
 
 
 
-
-
-## 5. Miscellaneous
-### Courses
-- [CMPUT 653 Theoretical Foundations of Reinforcement Learning](https://rltheory.github.io/) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/) at the University of Alberta.
-- [CS 598 Statistical Reinforcement Learning](https://nanjiang.cs.illinois.edu/cs598/) by [Nan Jiang](https://nanjiang.cs.illinois.edu/) at UIUC.
-- [CS 6789: Foundations of Reinforcement Learning](https://wensun.github.io/CS6789_fall_2021.html) by [Wen Sun](https://wensun.github.io/) at Cornell University and [Sham Kakade](https://homes.cs.washington.edu/~sham/) at University of Washington, with a book named [Reinforcement Learning: Theory and Algorithms](https://rltheorybook.github.io/).
-### Seminars and Workshops
-- [RL Theory Seminars](https://sites.google.com/view/rltheoryseminars/home), and its [YouTube page](https://www.youtube.com/c/RLtheory).
-- [Statistical Foundations of Reinforcement Learning](https://rltheorybook.github.io/colt21tutorial) at COLT 2021.
-- [Offline Reinforcement Learning Tutorial](https://sites.google.com/view/offlinerltutorial-neurips2020/home) at NeurIPS 2020.
-- [Offline Reinforcement Learning Workshop](https://offline-rl-neurips.github.io/papers.html) at NeurIPS 2020, with a bunch of videos on workshop papers.
-- [Smooth Games Optimization and ML Workshop](https://sgo-workshop.github.io/) at NeurIPS 2019.
-- OpenAI's [Key Papers in Deep RL](https://spinningup.openai.com/en/latest/spinningup/keypapers.html) and a [summary](https://github.com/RPC2/DRL_paper_summary), 2018.
-
-### Unclassified Papers
+## 🕹 Unclassified Papers
 **OptNet: Differentiable Optimization as a Layer in Neural Networks** [[link](http://proceedings.mlr.press/v70/amos17a/amos17a.pdf)] \
 Brandon Amos, J. Zico Kolter\
 *ICML, 2017*
@@ -212,6 +220,27 @@ Haonan Yu, Sergey Edunov, Yuandong Tian, Ari S. Morcos\
 Nasim Rahaman, Steffen Wolf, Anirudh Goyal, Roman Remme, Yoshua Bengio\
 *ICLR, 2021*
 > The notion of the arrow of time looks to be captivating, which is a function *tends* to increase as the MDP steps forward, just like the entropy increase principle. The agent will be rewarded for trajectories which decrease such an arrow, i.e., push the orderless to the ordered, like Sisyphus.
+
+
+
+
+
+
+
+
+
+## 🕹 Miscellaneous
+### Courses
+- [CMPUT 653 Theoretical Foundations of Reinforcement Learning](https://rltheory.github.io/) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/) at the University of Alberta.
+- [CS 598 Statistical Reinforcement Learning](https://nanjiang.cs.illinois.edu/cs598/) by [Nan Jiang](https://nanjiang.cs.illinois.edu/) at UIUC.
+- [CS 6789: Foundations of Reinforcement Learning](https://wensun.github.io/CS6789_fall_2021.html) by [Wen Sun](https://wensun.github.io/) at Cornell University and [Sham Kakade](https://homes.cs.washington.edu/~sham/) at University of Washington, with a book named [Reinforcement Learning: Theory and Algorithms](https://rltheorybook.github.io/).
+### Seminars and Workshops
+- [RL Theory Seminars](https://sites.google.com/view/rltheoryseminars/home), and its [YouTube page](https://www.youtube.com/c/RLtheory).
+- [Statistical Foundations of Reinforcement Learning](https://rltheorybook.github.io/colt21tutorial) at COLT 2021.
+- [Offline Reinforcement Learning Tutorial](https://sites.google.com/view/offlinerltutorial-neurips2020/home) at NeurIPS 2020.
+- [Offline Reinforcement Learning Workshop](https://offline-rl-neurips.github.io/papers.html) at NeurIPS 2020, with a bunch of videos on workshop papers.
+- [Smooth Games Optimization and ML Workshop](https://sgo-workshop.github.io/) at NeurIPS 2019.
+- OpenAI's [Key Papers in Deep RL](https://spinningup.openai.com/en/latest/spinningup/keypapers.html) and a [summary](https://github.com/RPC2/DRL_paper_summary), 2018.
 
 
 
