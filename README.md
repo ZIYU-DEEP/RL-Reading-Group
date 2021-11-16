@@ -154,6 +154,8 @@ Masatoshi Uehara, Xuezhou Zhang, Wen Sun\
 *Preprint, 2021* -->
 
 ## 🕹 Dueling/Preference RL (PbRL)
+> Generally, this line of work considers RL problems without explicitly defined reward for each `(state, action)` paper. In the standard setting, the agent will play a duel (i.e, two trajectories) during each episode, and will receive only a **preference feedback** (e.g., 0/1) for the two **trajectories** at the end. This setting is more general and eschews some of the issues in traditional reward learning or inverse RL literature. The techniques developed can be applied to various domains, like multi-objective trade-offs (e.g., the NIPS '17 one below.)
+
 **Deep Reinforcement Learning from Human Preferences** [[link](https://arxiv.org/pdf/1706.03741.pdf)] \
 Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amodei\
 *NIPS, 2017*
@@ -166,8 +168,13 @@ Ellen R. Novoseller, Yibing Wei, Yanan Sui, Yisong Yue, Joel W. Burdick\
 Yichong Xu, Ruosong Wang, Lin F. Yang, Aarti Singh, Artur Dubrawski\
 *NeurIPS (spotlight), 2020*
 
-**Dueling RL: Reinforcement Learning with Trajectory Preferences** [[link](https://arxiv.org/pdf/2111.04850.pdf)] \
+👽 **Dueling RL: Reinforcement Learning with Trajectory Preferences** [[link](https://arxiv.org/pdf/2111.04850.pdf)] \
 Aldo Pacchiano, Aadirupa Saha, and Jonathan Lee\
+*Preprint, 2021*
+> One interesting future direction raised in this paper is the preference over a *set*. It is more general than duel, since the agent can play a set of trajectories instead of just two. The non-transitive preference (e.g., [a dice case](https://www.wikiwand.com/en/Intransitive_dice)) may be relevant here.
+
+**On the Theory of Reinforcement Learning with Once-per-Episode Feedback** [[link](https://arxiv.org/abs/2105.14363)] \
+Niladri S. Chatterji, Aldo Pacchiano, Peter L. Bartlett, Michael I. Jordan\
 *Preprint, 2021*
 
 
