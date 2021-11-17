@@ -163,6 +163,7 @@ Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amode
 👽 **Dueling Posterior Sampling for Preference-based Reinforcement Learning** [[link](http://proceedings.mlr.press/v124/novoseller20a/novoseller20a.pdf)] [[code](https://github.com/ernovoseller/DuelingPosteriorSampling)] \
 Ellen R. Novoseller, Yibing Wei, Yanan Sui, Yisong Yue, Joel W. Burdick\
 *UAI, 2020*
+> Information ratio is used in the proof as well.
 
 **Preference-based Reinforcement Learning with Finite-Time Guarantees** [[link](https://arxiv.org/abs/2006.08910)] \
 Yichong Xu, Ruosong Wang, Lin F. Yang, Aarti Singh, Artur Dubrawski\
