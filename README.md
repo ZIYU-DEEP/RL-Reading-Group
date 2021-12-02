@@ -6,6 +6,8 @@ This is a repository for RL paper reading. It will *not* be a comprehensive list
 - [Offline RL](#-offline-rl)
 - [RL & Game Theory (and MARL)](#-rl--game-theory-and-marl)
 - [RL & Information Theory](#-rl--information-theory)
+    - [Principle of Maximum Entropy](#-principle-of-maximum-entropy)
+    - [Principle of Rate Reduction](#-principle-of-rate-reduction)
 - [RL & Representation Learning](#-rl--representation-learning)
 - [Dueling/Preference RL](#-duelingpreference-rl-pbrl)
 - [Unclassified Papers](#-unclassified-papers)
