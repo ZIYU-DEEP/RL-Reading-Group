@@ -100,7 +100,7 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 
 
 ## 🕹 RL & Information Theory
-> Startling simplicity, strong theoretical guarantee, and striking practical performance – they all well describes the principles of information theory.
+> Startling simplicity, strong theoretical guarantee, and striking practical performance – those all well describe the principles of information theory.
 ### 👾 Principle of Maximum Entropy
 > This simple principle asks human to confess their ignorance.
 Confronting the world of data, you could have numerous models, and this principle asks you to choose the *unique* model that possess the maximum entropy, i.e., you generally assume that different things are of equal probability.
