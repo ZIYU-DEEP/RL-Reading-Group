@@ -156,6 +156,10 @@ Nikolay Nikolov, Johannes Kirschner, Felix Berkenkamp, Andreas Krause\
 **Deciding What to Learn: A Rate-Distortion Approach** [[link](https://dilipa.github.io/papers/icml21_blasts.pdf)] \
 Dilip Arumugam, Benjamin Van Roy\
 *ICML, 2021*
+
+**The Value of Information When Deciding What to Learn** [[link](https://arxiv.org/abs/2110.13973)] \
+Dilip Arumugam, Benjamin Van Roy\
+*NeurIPS, 2021*
 <!-- <br> -->
 
 <!-- **** [[link]()] \
