@@ -1,5 +1,5 @@
 # RL Reading Group
-*Last updated on November 3, 2021.*
+⛄️ *Last updated on December, 2021.*
 
 This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now; feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
@@ -100,13 +100,48 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 
 
 ## 🕹 RL & Information Theory
+> Startling simplicity, strong theoretical guarantee, and striking practical performance – they all well describes the principles of information theory.
+### 👾 Principle of Maximum Entropy
+> This simple principle asks human to confess their ignorance.
+Confronting the world of data, you could have numerous models, and this principle asks you to choose the *unique* model that possess the maximum entropy, i.e., you generally assume that different things are of equal probability.
+> - From the designer's perspective, it asks you to choose the most diverse world model.
+> - From the agent's perspective, it asks you to act the most randomly.
+> - In practice, this principle can either serve as a constraint, or a direct objective to be optimized along with the original goal (e.g., maximum return).
+> - Mathematically, the Principle of Maximum Entropy is usually relevant to the Exponential Family of probability distribution.
+
+**Maximum Entropy Inverse Reinforcement Learning** [[link](https://www.aaai.org/Papers/AAAI/2008/AAAI08-227.pdf)] \
+Brian D. Ziebart, Andrew Maas, J.Andrew Bagnell, Anind K. Dey\
+*AAAI, 2008*
+
+**Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor** [[link](http://proceedings.mlr.press/v80/haarnoja18b)] \
+Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, Sergey Levine\
+*ICML, 2018*
+
+🔛 **Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review** [[link](https://arxiv.org/abs/1805.00909)] [[slides](https://jackhaha363.github.io/talk/control_as_inf/slides.pdf)] [[rap](https://www.youtube.com/watch?v=IAJ1LywY6Zg)] [[lecture](https://www.youtube.com/watch?v=oqvTC1rTjg8&list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37&index=12)] [[lecture notes](http://rail.eecs.berkeley.edu/deeprlcourse-fa18/static/slides/lec-15.pdf)] \
+Sergey Levine\
+*Preprint, 2018*
+
+**Maximum Entropy-Regularized Multi-Goal Reinforcement Learning** [[link](http://proceedings.mlr.press/v97/zhao19d.html)] \
+Rui Zhao, Xudong Sun, Volker Tresp\
+*ICML, 2019*
+
+**Maximum Entropy Gain Exploration for Long Horizon Multi-goal Reinforcement Learning** [[link](http://proceedings.mlr.press/v119/pitis20a.html)] \
+Silviu Pitis, Harris Chan, Stephen Zhao, Bradly Stadie, Jimmy Ba\
+*ICML, 2020*
+
+**Maximum Entropy RL (Provably) Solves Some Robust RL Problems** [[link](https://arxiv.org/abs/2103.06257)] [[blog](https://bair.berkeley.edu/blog/2021/03/10/maxent-robust-rl/)] \
+Benjamin Eysenbach, Sergey Levine\
+*Preprint, 2021*
+
+
+
+
+### 👾 Principle of Rate Reduction
 > The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. It may also connects to the state representation learning of RL.
-<!-- >>>>>>> Stashed changes -->
 
 **World Models** [[link](https://arxiv.org/abs/1803.10122)] [[code](https://github.com/hardmaru/WorldModelsExperiments)] \
 David Ha, Jürgen Schmidhuber\
 *NeurIPS, 2018*
-<!-- <br> -->
 
 **Information-Directed Exploration for Deep Reinforcement Learning** [[link](https://openreview.net/forum?id=Byx83s09Km)] \
 Nikolay Nikolov, Johannes Kirschner, Felix Berkenkamp, Andreas Krause\
@@ -207,10 +242,6 @@ Brendan O'Donoghue, Ian Osband, Catalin Ionescu\
 >
 > This paper also connects to Surgey Levine's well cited survey: [Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review](https://arxiv.org/abs/1805.00909), while this one further emphasizes the role of epistemic uncertainty in policy design.
 
-🔛 **Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review** [[link](https://arxiv.org/abs/1805.00909)] [[slides](https://jackhaha363.github.io/talk/control_as_inf/slides.pdf)] [[rap](https://www.youtube.com/watch?v=IAJ1LywY6Zg)] [[lecture](https://www.youtube.com/watch?v=oqvTC1rTjg8&list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37&index=12)] [[lecture notes](http://rail.eecs.berkeley.edu/deeprlcourse-fa18/static/slides/lec-15.pdf)] \
-Sergey Levine\
-*Preprint, 2018*
-
 **Hypermodels for Exploration** [[link](https://openreview.net/forum?id=ryx6WgStPB)] \
 Vikranth Dwaracherla, Xiuyuan Lu, Morteza Ibrahimi, Ian Osband, Zheng Wen, Benjamin Van Roy\
 *ICLR, 2020*
@@ -224,7 +255,7 @@ Binghong Chen, Bo Dai, Qinjie Lin, Guo Ye, Han Liu, Le Song\
 **Lottery Tickets in RL and NLP** [[link](https://openreview.net/forum?id=S1xnXRVFwH)] \
 Haonan Yu, Sergey Edunov, Yuandong Tian, Ari S. Morcos\
 *ICLR, 2020*
-<br>
+
 
 **Learning the Arrow of Time for Problems in Reinforcement Learning** [[link](https://openreview.net/forum?id=rylJkpEtwS)] [[talk](https://iclr.cc/virtual_2020/poster_rylJkpEtwS.html)] \
 Nasim Rahaman, Steffen Wolf, Anirudh Goyal, Roman Remme, Yoshua Bengio\
