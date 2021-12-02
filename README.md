@@ -102,7 +102,10 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 
 
 ## 🕹 RL & Information Theory
-> Startling simplicity, strong theoretical guarantee, and striking practical performance – those all well describe the principles of information theory.
+> Einstein said, “*Everything should be made as simple as possible, but no simpler.*”, or more precisely, “*It can scarcely be denied that **the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible**.*”
+>
+> The key characteristic of information theory is **simplicity**. Such simplicity usually endows the resulting principles with striking generality and practical effectiveness, helping us to understand fundamental mechanisms of the nature and providing a promising direction on designing intelligent agents.
+
 ### 👾 Principle of Maximum Entropy
 > This simple principle asks human to confess their ignorance.
 Confronting the world of data, you could have numerous models, and this principle asks you to choose the *unique* model that possess the maximum entropy, i.e., you generally assume that different things are of equal probability.
