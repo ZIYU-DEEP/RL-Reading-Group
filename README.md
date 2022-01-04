@@ -104,11 +104,11 @@ Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
 ## 🕹 RL & Information Theory
 > Einstein said, “*Everything should be made as simple as possible, but no simpler.*”, or more precisely, “*It can scarcely be denied that **the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible**.*”
 >
-> The key characteristic of information theory is **simplicity**. Such simplicity usually endows the resulting principles with striking generality and practical effectiveness, helping us to understand fundamental mechanisms of the nature and providing a promising direction on designing intelligent agents.
+> The key characteristic of information theory is **simplicity**. Such simplicity usually endows the resulting principles with striking generality and practical effectiveness, helping us to unify diverse findings and understand fundamental mechanisms of the nature, and providing a promising direction on designing intelligent agents.
 
 ### 👾 Principle of Maximum Entropy
 > This simple principle asks human to confess their ignorance.
-Confronting the world of data, you could have numerous models, and this principle asks you to choose the *unique* model that possess the maximum entropy, i.e., you generally assume that different things are of equal probability.
+Confronting the world of data, you could have numerous models, asnd this principle asks you to choose the *unique* model that possess the maximum entropy, i.e., you generally assume that different things are of equal probability.
 > - From the designer's perspective, it asks you to choose the most diverse world model.
 > - From the agent's perspective, it asks you to act the most randomly.
 > - In practice, this principle can either serve as a constraint, or a direct objective to be optimized along with the original goal (e.g., maximum return).
@@ -203,6 +203,12 @@ Masatoshi Uehara, Xuezhou Zhang, Wen Sun\
 **Deep Reinforcement Learning from Human Preferences** [[link](https://arxiv.org/pdf/1706.03741.pdf)] \
 Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amodei\
 *NIPS, 2017*
+
+**A Generalized Algorithm for Multi-Objective Reinforcement Learning and Policy Adaptation** [[link](https://arxiv.org/abs/1908.08342)] [[code](https://github.com/RunzheYang/MORL)] \
+Runzhe Yang, Xingyuan Sun, Karthik Narasimhan\
+*NIPS, 2019*
+> - This paper is on **multi-objective reinforcement learning (MORL)** with **linear preferences**, with the goal of enabling **few-shot adaptation** to new tasks.
+> - A slightly similar work on MOBO in the same venue: [Multi-objective Bayesian Optimization with Preferences over Objectives](https://proceedings.neurips.cc/paper/2019/file/a7b7e4b27722574c611fe91476a50238-Paper.pdf).
 
 👽 **Dueling Posterior Sampling for Preference-based Reinforcement Learning** [[link](http://proceedings.mlr.press/v124/novoseller20a/novoseller20a.pdf)] [[code](https://github.com/ernovoseller/DuelingPosteriorSampling)] \
 Ellen R. Novoseller, Yibing Wei, Yanan Sui, Yisong Yue, Joel W. Burdick\
