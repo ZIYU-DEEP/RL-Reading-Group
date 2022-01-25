@@ -166,6 +166,11 @@ Dilip Arumugam, Benjamin Van Roy\
 \
 *Preprint, 2021* -->
 
+### 👾 Others
+**EMI: Exploration with Mutual Information** [[link](https://arxiv.org/abs/1810.01176)] \
+Hyoungseok Kim, Jaekyeom Kim, Yeonwoo Jeong, Sergey Levine, Hyun Oh Song\
+*ICML, 2019*
+
 
 ## 🕹 RL & Representation Learning
 **Provably Efficient RL with Rich Observations via Latent State Decoding** [[link](https://arxiv.org/abs/1901.09018)] \
