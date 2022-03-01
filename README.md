@@ -4,10 +4,11 @@
 This is a repository for RL paper reading. It will *not* be a comprehensive list of all relevant papers. Topics are rough now; feel free to modify or increase anytime:
 <!-- - *[General RL Theory](#1-rl-theory)* -->
 - [Offline RL](#-offline-rl)
-- [RL & Game Theory (and MARL)](#-rl--game-theory-and-marl)
 - [RL & Information Theory](#-rl--information-theory)
     - [Principle of Maximum Entropy](#-principle-of-maximum-entropy)
     - [Principle of Rate Reduction](#-principle-of-rate-reduction)
+    - [Principle of Information Bottleneck](#-principle-of-information-bottleneck)
+- [RL & Game Theory (and MARL)](#-rl--game-theory-and-marl)
 - [RL & Representation Learning](#-rl--representation-learning)
 - [Dueling/Preference RL](#-duelingpreference-rl-pbrl)
 - [Unclassified Papers](#-unclassified-papers)
@@ -58,47 +59,6 @@ Ilya Kostrikov, Ashvin Nair, Sergey Levine\
 *Preprint, 2021*
 <br> -->
 
-## 🕹 RL & Game Theory (and MARL)
-> Roughly speaking, major works consider to understand your opponents/collaborators, by explicitly estimating other agents' behaviors, or promoting communication (information sharing) between agents. However, there are also papers claiming that learning in a single-agent way may already be sufficient for you to exceed in the multi-agent environment.
-
-👽 **An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective** [[link](https://arxiv.org/abs/2011.00583)] \
-Yaodong Yang, Jun Wang\
-*Preprint, 2021*
-
-**Multi‑agent Deep Reinforcement Learning: a Survey** [[link](https://link.springer.com/content/pdf/10.1007/s10462-021-09996-w.pdf)] \
-Sven Gronauer, Klaus Diepold\
-*Artificial Intelligence Review, 2021*
-
-**Value-Decomposition Networks For Cooperative Multi-Agent Learning** [[link](https://arxiv.org/abs/1706.05296)] \
-Peter Sunehag, Guy Lever, Audrunas Gruslys, Wojciech Marian Czarnecki, Vinicius Zambaldi, Max Jaderberg, Marc Lanctot, Nicolas Sonnerat, Joel Z. Leibo, Karl Tuyls, Thore Graepel\
-*AAMAS, 2017*
-
-👽 **A Game Theoretic Framework for Model Based Reinforcement Learning** [[link](https://arxiv.org/abs/2004.07804)] \
-Aravind Rajeswaran, Igor Mordatch, Vikash Kumar\
-*ICML, 2020*
-
-**Cooperative Exploration for Multi-Agent Deep Reinforcement Learning** [[link](https://arxiv.org/abs/2107.11444)] [[website](https://ioujenliu.github.io/CMAE/)] [[video](https://youtu.be/rQZHawgqgsk)] \
-Iou-Jen Liu, Unnat Jain, Raymond A. Yeh, Alexander G. Schwing\
-*ICML, 2021*
-
-👽 **IPPO: Is Independent Learning All You Need in the StarCraft Multi-Agent Challenge?** [[link](https://arxiv.org/abs/2011.09533)] \
-Christian Schroeder de Witt, Tarun Gupta, Denys Makoviichuk, Viktor Makoviychuk, Philip H.S. Torr, Mingfei Sun, Shimon Whiteson\
-*Preprint, 2020*
-> Do we really need to model others' behavior? Unlike popular cooperative MARL papers which usually involves a *centralized* value function, IPPO lets each agent just estimate its own *local* value function, which achieves compatible results with SOTA models.
->
-> I feel this aligns with the very beginning idea of Adam Smith on the [invisible hand](https://www.wikiwand.com/en/Invisible_hand), i.e., better social welfare stems from individual just acting in *their own self-interests*. Plus, a centralized value function may not be a good idea, as individual utility function can hardly be added up in complex environment. It might be interesting to examine the problem from an economics perspective, e.g., if there exists [market failure](https://www.wikiwand.com/en/Market_failure) phenomena in the independent learning, and how we may incorporate certain regularizations to improve market (learning) efficiency.
-
-**MAPPO: The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games** [[link](https://arxiv.org/abs/2103.01955)] [[blog](https://bair.berkeley.edu/blog/2021/07/14/mappo/)] [[code](https://github.com/marlbenchmark/on-policy)] \
-Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
-*Preprint, 2021*
-> This paper is like a follow-up work on IPPO. The critic part of MAPPO uses the (agent-specific) *global state* as the input, unlike the observations used in IPPO.
->
-> Several algorithmic tricks are discussed in this paper, like value normalization, action masking, etc.
-
-<!-- **** [[link]()] \
-\
-*Preprint, 2021* -->
-
 
 
 ## 🕹 RL & Information Theory
@@ -139,8 +99,6 @@ Benjamin Eysenbach, Sergey Levine\
 *Preprint, 2021*
 
 
-
-
 ### 👾 Principle of Rate Reduction
 > The high-level idea of this line of work is probably that: we can learn efficiently just through a latent (low-dimensional) representation of the environment. The theoretical framework can trace back to Claude Shannon's communication system and rate-distortion theory. It may also connects to the state representation learning of RL.
 
@@ -166,10 +124,110 @@ Dilip Arumugam, Benjamin Van Roy\
 \
 *Preprint, 2021* -->
 
+### 👾 Principle of Information Bottleneck
+**InfoBot: Transfer and Exploration via the Information Bottleneck** [[paper](https://openreview.net/forum?id=rJg8yhAqKm)] [[code](https://github.com/maximecb/gym-minigrid)]\
+Anirudh Goyal, Riashat Islam, DJ Strouse, Zafarali Ahmed, Hugo Larochelle, Matthew Botvinick, Yoshua Bengio, Sergey Levine\
+*ICLR, 2019*
+> The idea is simply to constrain the dependence on a certain goal, so that the agent can learn a *default behavior*.
+> - This done by introducing $- \beta I(A ; G \mid S)$ or equivalently $- \beta D_{\mathrm{KL}}\left[\pi_{\theta}(A \mid S, G) \mid \pi_{0}(A \mid S)\right]$ in the reward function, that is: $$
+\begin{aligned}
+J(\theta) & \equiv \mathbb{E}_{\pi_{\theta}}[r]-\beta I(A ; G \mid S) \\
+&=\mathbb{E}_{\pi_{\theta}}\left[r-\beta D_{\mathrm{KL}}\left[\pi_{\theta}(A \mid S, G) \mid \pi_{0}(A \mid S)\right]\right].
+\end{aligned}
+$$
+
+**Generalization in Reinforcement Learning with Selective Noise Injection and Information Bottleneck** [[link](https://arxiv.org/abs/1910.12911)] [[code](https://github.com/microsoft/IBAC-SNI)] [[talk](https://www.youtube.com/watch?v=tWtM4Dq05ZA)]\
+Maximilian Igl, Kamil Ciosek, Yingzhen Li, Sebastian Tschiatschek, Cheng Zhang, Sam Devlin, Katja Hofmann\
+*NeurIPS, 2019*
+
+**Learning Task-Driven Control Policies via Information Bottlenecks** [[link](https://arxiv.org/abs/2002.01428)] [[spotlight talk](https://www.youtube.com/watch?v=nzLyRHON24E)]\
+Vincent Pacelli, Anirudha Majumdar\
+*RSS, 2020*
+
+🐤 **The Bottleneck Simulator: A Model-based Deep Reinforcement Learning Approach** [[journal '20](https://www.jair.org/index.php/jair/article/view/12463/26616)] [[arxiv '18](https://arxiv.org/abs/1807.04723)]
+Iulian Vlad Serban, Chinnadhurai Sankar, Michael Pieper, Joelle Pineau, Yoshua Bengio\
+*Journal of Artificial Intelligence Research (JAIR), 2020*
+
+**Learning Robust Representations via Multi-View Information Bottleneck** [[link](https://openreview.net/forum?id=B1xwcyHFDr)] [[code](https://github.com/mfederici/Multi-View-Information-Bottleneck)] [[talk](https://iclr.cc/virtual_2020/poster_B1xwcyHFDr.html)]\
+Marco Federici, Anjan Dutta, Patrick Forré, Nate Kushman, Zeynep Akata\
+*ICLR, 2020*
+
+**DRIBO: Robust Deep Reinforcement Learning via Multi-View Information Bottleneck** [[paper](https://openreview.net/forum?id=Py8WbvKH_wv)] [[code](https://github.com/JmfanBU/DRIBO)]\
+Jiameng Fan, Wenchao Li\
+*Rejected by ICLR, 2022*
+
+**Learning Representations in Reinforcement Learning: an Information Bottleneck Approach** [[link](https://openreview.net/forum?id=Syl-xpNtwS)] [[code](https://github.com/AnonymousSubmittedCode/SVIB)]\
+Yingjun Pei, Xinwen Hou\
+*Rejected by ICLR, 2020*
+
+**Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning** [[link](https://arxiv.org/abs/2008.00614)]\
+Xingyu Lu, Kimin Lee, Pieter Abbeel, Stas Tiomkin\
+*ArXiv, 2020*
+
+**Dynamic Bottleneck for Robust Self-Supervised Exploration** [[paper](https://openreview.net/forum?id=-t6TeG3A6Do)] [[code](https://github.com/Baichenjia/DB)]\
+Chenjia Bai, Lingxiao Wang, Lei Han, Animesh Garg, Jianye HAO, Peng Liu, Zhaoran Wang\
+*NeurIPS, 2021*
+> - The high-level idea is to first generate a dynamics-relevant representation $Z_{t}$, then impose a bottleneck on dynamics, in order to through away the dynamics-irrelevant information.
+> - That is, $\min I([S_t, A_t]; Z_t)$, and $\max I(Z_t; S_{t+1})$.
+
+
+
+
+
 ### 👾 Others
 **EMI: Exploration with Mutual Information** [[link](https://arxiv.org/abs/1810.01176)] \
 Hyoungseok Kim, Jaekyeom Kim, Yeonwoo Jeong, Sergey Levine, Hyun Oh Song\
 *ICML, 2019*
+
+**Reinforcement Learning, Bit by Bit**\
+Xiuyuan Lu, Benjamin Van Roy, Vikranth Dwaracherla, Morteza Ibrahimi, Ian Osband, Zheng Wen\
+*ArXiv, 2022*\
+[[paper](https://arxiv.org/abs/2103.04047)]
+> - The high level idea comes from Posterior Sampling, that we sample the environment from a maintained posterior at the beginning of each episode, and then take the action which minimizing the information ratio.
+> - The information ratio is defined by: $$\Gamma_{\tau, t}=\frac{\mathbb{E}\left[V_{*}\left(H_{t}\right)-Q_{*}\left(H_{t}, A_{t}\right)\right]^{2}}{\left(\mathbb{I}\left(\chi ; \mathcal{E} \mid P_{t}\right)-\mathbb{I}\left(\chi ; \mathcal{E} \mid P_{t+\tau}\right)\right) / \tau}.$$
+> - This can be view as a very classical exploration-exploitation tradeoff. The numerator represents the immediate shortfall, while the nominator represents the information gain about the environment.
+> - :baby_chick:: A potential improvement might be incorporating information bottleneck in the denominator part. That is, we may not need to learn that much from the environment: we only want learn those to be relevant to our objective, and discard those irrelevant.
+
+## 🕹 RL & Game Theory (and MARL)
+> Roughly speaking, major works consider to understand your opponents/collaborators, by explicitly estimating other agents' behaviors, or promoting communication (information sharing) between agents. However, there are also papers claiming that learning in a single-agent way may already be sufficient for you to exceed in the multi-agent environment.
+
+👽 **An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective** [[link](https://arxiv.org/abs/2011.00583)] \
+Yaodong Yang, Jun Wang\
+*Preprint, 2021*
+
+**Multi‑agent Deep Reinforcement Learning: a Survey** [[link](https://link.springer.com/content/pdf/10.1007/s10462-021-09996-w.pdf)] \
+Sven Gronauer, Klaus Diepold\
+*Artificial Intelligence Review, 2021*
+
+**Value-Decomposition Networks For Cooperative Multi-Agent Learning** [[link](https://arxiv.org/abs/1706.05296)] \
+Peter Sunehag, Guy Lever, Audrunas Gruslys, Wojciech Marian Czarnecki, Vinicius Zambaldi, Max Jaderberg, Marc Lanctot, Nicolas Sonnerat, Joel Z. Leibo, Karl Tuyls, Thore Graepel\
+*AAMAS, 2017*
+
+👽 **A Game Theoretic Framework for Model Based Reinforcement Learning** [[link](https://arxiv.org/abs/2004.07804)] \
+Aravind Rajeswaran, Igor Mordatch, Vikash Kumar\
+*ICML, 2020*
+
+**Cooperative Exploration for Multi-Agent Deep Reinforcement Learning** [[link](https://arxiv.org/abs/2107.11444)] [[website](https://ioujenliu.github.io/CMAE/)] [[video](https://youtu.be/rQZHawgqgsk)] \
+Iou-Jen Liu, Unnat Jain, Raymond A. Yeh, Alexander G. Schwing\
+*ICML, 2021*
+
+👽 **IPPO: Is Independent Learning All You Need in the StarCraft Multi-Agent Challenge?** [[link](https://arxiv.org/abs/2011.09533)] \
+Christian Schroeder de Witt, Tarun Gupta, Denys Makoviichuk, Viktor Makoviychuk, Philip H.S. Torr, Mingfei Sun, Shimon Whiteson\
+*Preprint, 2020*
+> Do we really need to model others' behavior? Unlike popular cooperative MARL papers which usually involves a *centralized* value function, IPPO lets each agent just estimate its own *local* value function, which achieves compatible results with SOTA models.
+>
+> I feel this aligns with the very beginning idea of Adam Smith on the [invisible hand](https://www.wikiwand.com/en/Invisible_hand), i.e., better social welfare stems from individual just acting in *their own self-interests*. Plus, a centralized value function may not be a good idea, as individual utility function can hardly be added up in complex environment. It might be interesting to examine the problem from an economics perspective, e.g., if there exists [market failure](https://www.wikiwand.com/en/Market_failure) phenomena in the independent learning, and how we may incorporate certain regularizations to improve market (learning) efficiency.
+
+**MAPPO: The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games** [[link](https://arxiv.org/abs/2103.01955)] [[blog](https://bair.berkeley.edu/blog/2021/07/14/mappo/)] [[code](https://github.com/marlbenchmark/on-policy)] \
+Chao Yu, Akash Velu, Eugene Vinitsky, Yu Wang, Alexandre Bayen, Yi Wu\
+*Preprint, 2021*
+> This paper is like a follow-up work on IPPO. The critic part of MAPPO uses the (agent-specific) *global state* as the input, unlike the observations used in IPPO.
+>
+> Several algorithmic tricks are discussed in this paper, like value normalization, action masking, etc.
+
+<!-- **** [[link]()] \
+\
+*Preprint, 2021* -->
 
 
 ## 🕹 RL & Representation Learning
