@@ -298,6 +298,7 @@ Niladri S. Chatterji, Aldo Pacchiano, Peter L. Bartlett, Michael I. Jordan\
 🔛 **The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models** [[link](https://openreview.net/forum?id=JYtwGwIL7ye)]\
 Alexander Pan, Kush Bhatia, Jacob Steinhardt\
 *ICLR, 2022*
+> One conclusion of this paper is that more *capable* agent is more likely to do reward hacking. Can we impose a general information bottleneck (instead of defining lots of domain-specific intermediate rewards or constraints) to make the agent less *capable* or less *cunning*? In other words, while we may not be able to foresee the consequence (i.e., how the agent may hack the reward), we can take general precautions, ensure the agent to have a good learning habit at the beginning and throughout the learning process.
 
 🔛 **Machine Theory of Mind** [[link](https://arxiv.org/abs/1802.07740)] \
 Neil C. Rabinowitz, Frank Perbet, H. Francis Song, Chiyuan Zhang, S.M. Ali Eslami, Matthew Botvinick\
