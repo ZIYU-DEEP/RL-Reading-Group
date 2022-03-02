@@ -295,10 +295,14 @@ Niladri S. Chatterji, Aldo Pacchiano, Peter L. Bartlett, Michael I. Jordan\
 
 
 ## 🕹 Unclassified Papers
+🔛 **The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models** [[link](https://openreview.net/forum?id=JYtwGwIL7ye)]\
+Alexander Pan, Kush Bhatia, Jacob Steinhardt\
+*ICLR, 2022*
+
 🔛 **Machine Theory of Mind** [[link](https://arxiv.org/abs/1802.07740)] \
 Neil C. Rabinowitz, Frank Perbet, H. Francis Song, Chiyuan Zhang, S.M. Ali Eslami, Matthew Botvinick\
 *ICML, 2018*
-<br>
+
 
 **OptNet: Differentiable Optimization as a Layer in Neural Networks** [[link](http://proceedings.mlr.press/v70/amos17a/amos17a.pdf)] \
 Brandon Amos, J. Zico Kolter\
@@ -330,9 +334,9 @@ Binghong Chen, Bo Dai, Qinjie Lin, Guo Ye, Han Liu, Le Song\
 *ICLR (spotlight), 2020*
 > This may potentially be relevant to the UFODT paper, as well as the NeurIPS 2021 paper: [The Value of Information When Deciding What to Learn](https://arxiv.org/abs/2110.13973).
 
-**Lottery Tickets in RL and NLP** [[link](https://openreview.net/forum?id=S1xnXRVFwH)] \
+<!-- **Lottery Tickets in RL and NLP** [[link](https://openreview.net/forum?id=S1xnXRVFwH)] \
 Haonan Yu, Sergey Edunov, Yuandong Tian, Ari S. Morcos\
-*ICLR, 2020*
+*ICLR, 2020* -->
 
 
 **Learning the Arrow of Time for Problems in Reinforcement Learning** [[link](https://openreview.net/forum?id=rylJkpEtwS)] [[talk](https://iclr.cc/virtual_2020/poster_rylJkpEtwS.html)] \
