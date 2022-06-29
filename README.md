@@ -2,9 +2,9 @@
 ⛄️ *Last updated on June, 2022.*
 
 Use this [HackMD link](https://hackmd.io/@LEK-LEK/Sk1kzzqq9/edit) to collaboratively viewing and edit this page.
-<!-- - *[General RL Theory](#1-rl-theory)* -->
+- [Running Notes](https://hackmd.io/@LEK-LEK/HkvGUfcqc/edit)
 - [Paper List](https://github.com/ZIYU-DEEP/RL-Reading-Group/blob/main/README.md)
-- [Notes](https://github.com/ZIYU-DEEP/RL-Reading-Group/blob/main/notes.md)
+- [Jamboard](https://jamboard.google.com/d/1OiQZRHffhr1ohlQAjz6m7xWkXi99hPvtntD0NZdFZT0/edit?usp=sharing)
 - [Schedules](#schedules)
 - [Resources](#resources)
 
