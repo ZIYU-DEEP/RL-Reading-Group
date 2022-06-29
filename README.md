@@ -1,7 +1,7 @@
 # 👽 RL Reading Group
 ⛄️ *Last updated on June, 2022.*
 
-Use this [HackMD link](https://hackmd.io/@LEK-LEK/Sk1kzzqq9/edit) to collaborative viewing and edit this page.
+Use this [HackMD link](https://hackmd.io/@LEK-LEK/Sk1kzzqq9/edit) to collaboratively viewing and edit this page.
 <!-- - *[General RL Theory](#1-rl-theory)* -->
 - [Paper List](https://github.com/ZIYU-DEEP/RL-Reading-Group/blob/main/README.md)
 - [Notes](https://github.com/ZIYU-DEEP/RL-Reading-Group/blob/main/notes.md)
